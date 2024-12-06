@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+<body>
+<header th:fragment="header">
+  <a th:href="@{/}">
+    <h1>Firma Przykładowa</h1>
+  </a>
+  <nav>
+    <a th:href="@{/}">Strona Główna</a><br><hr>
+    <a th:href="@{/contact}">Kontakt</a><br><hr>
+    <a th:href="@{/rodo}">RODO</a>
+  </nav>
+</header>
+<footer th:fragment="footer">
+  <p>&copy; 2024 Firma Przykładowa. Wszelkie prawa zastrzeżone.</p>
+</footer>
+</body>
+</html>

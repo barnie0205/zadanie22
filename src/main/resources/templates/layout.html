@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">Firma Przykładowa</title>
+    <link rel="stylesheet" th:href="@{style.css}">
+</head>
+<body>
+<header th:replace="~{fragments :: header}"></header>
+
+<main layout:fragment="content">
+</main>
+
+<footer th:replace="~{fragments :: footer}"></footer>
+</body>
+</html>

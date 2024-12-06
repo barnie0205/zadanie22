@@ -1,0 +1,18 @@
+spring:
+  mail:
+    host: smtp.poczta.onet.pl
+    port: 465
+    username: jakismailtestowy@onet.pl
+    password: JavaStart2024!
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: false
+          ssl:
+            enable: true
+          connectiontimeout: 5000
+          timeout: 5000
+          writetimeout: 5000
