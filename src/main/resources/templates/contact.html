@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <title>Kontakt</title>
+</head>
+<main layout:fragment="content">
+    <div th:if="${error}" class="error-message">
+        <p th:text="${error}"></p>
+    </div>
+    <h2>Formularz kontaktowy</h2>
+    <form action="#" th:action="@{/send-message}" method="post">
+        <label for="name">Imię:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="clientEmail">Email:</label>
+        <input type="email" id="clientEmail" name="clientEmail" required><br>
+
+        <label for="message">Wiadomość:</label><br>
+        <textarea id="message" name="message" rows="5" cols="40" required></textarea><br>
+
+        <button type="submit">Wyślij</button>
+    </form>
+</main>
+</html>
